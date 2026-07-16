@@ -3,130 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Farah Yusuf - CV</title>
-
+    <title>Abdullahi Jama Ahmed | Portfolio</title>
+    
     <style>
+        /* 1. Style the background area (the "desk" your paper sits on) */
         body {
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 20px;
+            background-color: #0f172a; /* Dark background */
+            color: #1e293b;            /* Dark text inside the paper for high contrast */
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
         }
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        /* 2. Style the "Paper" container */
+        .paper-cv {
+            background-color: #ffffff; /* White paper */
+            max-width: 700px;          /* Fixed width like a sheet of paper */
+            width: 100%;
+            padding: 50px 60px;        /* Generous paper margins */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Shadow to make it "float" */
+            border-radius: 8px;        /* Slightly rounded corners for a modern look */
+            line-height: 1.6;
+            box-sizing: border-box;
         }
 
+        /* 3. Style your headings on the white paper */
         h1 {
-            color: #003366;
-            text-align: center;
+            color: #0f172a;
+            margin-top: 0;
+            border-bottom: 2px solid #22c55e; /* Green accent line under your name */
+            padding-bottom: 10px;
         }
 
         h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
+            color: #22c55e; /* Vibrant green for section titles */
+            border-bottom: 1px solid #e2e8f0;
             padding-bottom: 5px;
+            margin-top: 30px;
         }
 
-        p, li {
-            font-size: 16px;
-            line-height: 1.6;
+        h3 {
+            color: #0f172a;
+            margin-bottom: 5px;
         }
 
+        /* 4. Style navigation links */
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #0284c7; /* Blue links that look good on white */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* 5. Clean up list spacing */
         ul {
             padding-left: 20px;
         }
 
-        .info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .info p {
-            margin: 5px;
+        /* 6. Link styles inside the paper */
+        a {
+            color: #0284c7;
         }
     </style>
 </head>
-
 <body>
 
-<div class="container">
+    <!-- This div acts as your "sheet of paper" -->
+    <div class="paper-cv">
 
-    <h1>Mohamed Farah Yusuf</h1>
+        <!-- 1. HEADER (Navigation Links) -->
+        <header>
+            <nav>
+                <a href="#home">Home</a> | 
+                <a href="#about">About</a> | 
+                <a href="#skills">Skills</a> | 
+                <a href="#projects">Projects</a> | 
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-    <div class="cv">
-        <p><strong>Email:</strong> Mohamed10@gmail.com</p>
-        <p><strong>Phone:</strong> +252 907761761</p>
-        <p><strong>Location:</strong> Garowe, Puntland, Somalia</p>
-        <p><strong>Nationality:</strong> Somali</p>
-        <p><strong>University: Puntland state University</strong></p>
+        <!-- 2. HOME / HERO SECTION -->
+        <section id="home">
+            <h1>ABDULLAHI JAMA AHMED</h1>
+            <p style="font-size: 1.1em; color: #475569; font-weight: bold;">
+                Software Engineering Undergraduate | Future Full-Stack Developer
+            </p>
+        </section>
+
+        <!-- 3. ABOUT SECTION -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Software Engineering undergraduate student at Puntland State University (PSU). 
+                My academic journey has fueled a strong interest in building modern web applications, designing database systems, 
+                and ensuring software quality through testing. I love problem-solving and am constantly working 
+                on expanding my skills to transition into a full-stack developer role.
+            </p>
+        </section>
+
+        <!-- 4. SKILLS SECTION -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Java, Python, JavaScript, C++</li>
+                <li><strong>Frontend:</strong> HTML, CSS, React</li>
+                <li><strong>Backend:</strong> Node.js, Express</li>
+            </ul>
+        </section>
+
+        <!-- 5. PROJECTS SECTION -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div>
+                <h3>Student Course Registration System</h3>
+                <p>Built with React, Node.js, and PostgreSQL.</p>
+                <!-- Updated with your real GitHub Repository URL -->
+                <a href="https://github.com/abdallaCJ/my-cv" target="_blank">View GitHub Repo</a>
+            </div>
+        </section>
+
+        <!-- 6. CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:c.j.ahmed007@gmail.com">c.j.ahmed007@gmail.com</a></p>
+            <p>Phone: <a href="tel:+252907445270">+252907445270</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">My Profile</a></p>
+        </section>
+
     </div>
-
-    <h2>Profile information</h2>
-    <p>
-         I am passionate about programming, software development, and cyber security.
-        I enjoy learning new technologies, solving technical problems, and
-        continuously improving my technical skills. My goal is to become a
-        professional Software Engineer and Cyber Security Specialist.
-    </p>
-
-    <h2>Education</h2>
-    <ul>
-        <li>
-            <strong>Bachelor of Computer Science</strong><br>
-            Department: Software Engineering<br>
-           at Puntland State University<br>
-            Year 1 – Semester 3
-        </li>
-    </ul>
-
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>C++ Programming</li>
-        <li>Microsoft Word</li>
-        <li>Public Speaking</li>
-    </ul>
-
-    <h2>Languages</h2>
-    <ul>
-        <li>Somali – Native</li>
-        <li>English – Intermediate</li>
-        <li>Arabic – Beginner</li>
-    </ul>
-
-    <h2>Hobbies</h2>
-    <ul>
-        <li>Traveling</li>
-        <li>Learning Cyber Security</li>
-        <li>Reading books</li>
-        
-
-    </ul>
-
-    <h2>Career Objective</h2>
-    <p>
-        To build a successful career as a Software Engineer by developing
-        innovative software solutions while expanding my knowledge in cyber
-        security and modern technologies. I am committed to continuous learning,
-        teamwork, and professional growth.
-    </p>
-
-    <h2>References</h2>
-
-<p>
-    <strong>Drs. Jamad Hirsi Omar</strong><br> 
-    Email: jamadhirsi02<br>
-    Phone: +252 907680622<br>
-   
-</p>
-
-</div>
 
 </body>
 </html>
